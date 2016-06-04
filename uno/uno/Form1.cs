@@ -21,9 +21,11 @@ namespace uno
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            timer1.Enabled = true;
+            timer2.Enabled = true;
         }
         //Estas variables son las del tiempo. RR
+        //https://.youtube.com/watch?v=ZPCF3pRY0VQ
         int mile;
         int seg;
         int min;
@@ -38,13 +40,13 @@ namespace uno
                 min = 0;
             }
 
-            if (seg == 61)
+            if (seg ==61)
             {
-                min += 1;
-                seg = 0;
+                min+=1;
+                seg=0;
             }
-            seg += 1;
-            label1.Text= hor.ToString() + ":" + min.ToString() + ":" seg.ToString();
+            seg +=1;
+            label1.Text= hor.ToString() + ":" + min.ToString() + ":" + seg.ToString();
 
         }
 
