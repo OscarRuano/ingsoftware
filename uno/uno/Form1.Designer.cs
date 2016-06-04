@@ -55,6 +55,7 @@
             this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -65,10 +66,15 @@
             this.label2.Size = new System.Drawing.Size(85, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "label2";
+            this.label2.Visible = false;
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 

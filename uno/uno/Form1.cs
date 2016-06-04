@@ -31,6 +31,7 @@ namespace uno
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label1.Visible = true;
             if (min == 61)
             {
                 hor += 1;
@@ -45,6 +46,17 @@ namespace uno
             seg += 1;
             label1.Text= hor.ToString() + ":" + min.ToString() + ":" seg.ToString();
 
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+            if (mile == 61)
+            {
+                mile = 0;
+            }
+            mile += 1;
+            label2.Text = mile.ToString();
         }
     }
 }
