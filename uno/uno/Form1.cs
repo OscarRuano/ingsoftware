@@ -23,9 +23,27 @@ namespace uno
         {
 
         }
+        //Estas variables son las del tiempo. RR
+        int mile;
+        int seg;
+        int min;
+        int hor;
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (min == 61)
+            {
+                hor += 1;
+                min = 0;
+            }
+
+            if (seg == 61)
+            {
+                min += 1;
+                seg = 0;
+            }
+            seg += 1;
+            label1.Text= hor.ToString() + ":" + min.ToString() + ":" seg.ToString();
 
         }
     }
